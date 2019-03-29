@@ -1,0 +1,75 @@
+<!--
+
+<h1 [ngStyle]="myColor">{{title}}</h1>    {{}} Interpolation -->
+<!-- 
+<h1 [hidden]="isHide">{{title}}</h1> 
+<h1 *ngIf="isHidden">This is the structural directive</h1>
+<button type="submit" (click)="toggle()">Toggle</button>
+<hr>
+<table border=1px>
+   <thead>
+      <tr>
+      <td [attr.colspan]="colspan">   Details </td>
+      </tr>
+   </thead>
+<tr>
+   <th>Name</th>
+   <th>City</th>
+</tr>
+   <tr *ngFor= "let x of student">
+       <td>{{x.name}}</td>
+       <td>{{x.city}}</td>
+   </tr>
+   <tr><button type='submit' (click)='showMore()'>Show More</button></tr>
+</table>
+
+<h2>{{ goToList() }}</h2>
+<h2 *ngIf="show">This is the demo of Interpolation</h2>
+<button (click)='onClick()'>Show List</button>
+<br>
+<br>
+<img *ngIf="show" src="https://angular.io/assets/images/logos/angular/logo-nav@2x.png">
+<br>
+<img *ngIf="show" src={{imagePath}}>
+<br>
+<button (click)="onClick()">Show Image</button> -->
+<!--Interpolation-->
+<!-- <button disabled="{{isDisable}}">Click Here</button>
+<br><br> -->
+<!-- Property Binding-->
+<!-- <button [disabled]="isDisable">Click Here Again</button>
+<br>
+<br> -->
+
+<!-- Two way Data Binding-->
+<!-- <input type="text" [(ngModel)]="name">
+<br>
+<h2>You Entered : {{name}}</h2> -->
+<app-employee-count [all]="totalEmployees()" [male]="totalMaleEmployees()"
+[female]="totalFemaleEmployees()"></app-employee-count>
+<table>
+   <tr>
+   <th>ID</th>
+   <th>Name</th>
+   <th>Gender</th>
+   <th>Salary</th>
+   <th>Dob</th>
+</tr>
+<tr *ngFor = "let e of employees">
+   
+   
+   <td>{{e.id}}</td>
+   <td>{{e.name | titlecase}}</td>
+   <td>{{e.gender | uppercase}}</td>
+   <td>{{e.salary | squarePipe}}</td>
+   <td>{{e.dob | date }}</td>
+</tr>
+  
+
+</table>
+<h2> Total Employees are : {{totalEmployees()}}</h2>
+<h2> Total Male Employees are : {{totalMaleEmployees()}}</h2>
+
+<h2> Total Female Employees are : {{totalFemaleEmployees()}}</h2>
+<br>
+<br>

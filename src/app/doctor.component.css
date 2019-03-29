@@ -1,0 +1,16 @@
+table{
+/* border-collapse: collapse;  */
+border: 1px solid black;
+}
+th{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 100%;
+    color: blue;
+    border: 1px solid black;
+}
+td{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 90%;
+    color: black;
+    border: 1px solid black;
+}
